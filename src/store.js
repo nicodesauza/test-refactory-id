@@ -6,15 +6,15 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    lists: []
+    list: null
   },
 
   getters: {
     getData: (state) => {
       return state.lists;
     },
-    getCountData: (state) => {
-        return state.lists.length
+    getCountData: () => {
+        return 0
     }
   },
 
@@ -25,8 +25,8 @@ export default new Vuex.Store({
   },
 
   actions: {
-    setData(context, data) {
-      context.commit(SET_DATA, data);
+    setDatas(context, data) {
+      context.commit('setData', data);
     },
   },
 });

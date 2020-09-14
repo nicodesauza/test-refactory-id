@@ -70,43 +70,6 @@ export default {
   background-color: #f5f7fa;
   padding: 10px;
 }
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-.card {
-  background-color: #ffffff;
-  margin: 10px 5px;
-  padding: 20px;
-  border-radius: 5px;
-  width: 45%;
-}
-.body-card {
-  flex-direction: row;
-}
-.wrapper-card {
-    display: flex;
-    justify-content: space-between;
-}
-.title {
-  color: #d8d8df;
-  font-size: 12px;
-  margin-top: 10px;
-}
-.name {
-  font-size: 20px;
-  font-weight: 700;
-  color: #646464;
-}
-.website {
-  color: #83dd8b;
-  font-weight: 800;
-}
-.main-title {
-  font-size: 30px;
-  font-weight: 800;
-  margin-top: 20px;
-}
 .count {
   color: #83dd8b;
   font-weight: 800;
