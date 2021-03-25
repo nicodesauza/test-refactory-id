@@ -32,8 +32,8 @@
 
 <script>
 import axios from "axios";
-import { mapState } from "vuex";
-import { INCREMENT } from "../mutation-types";
+// import { mapState } from "vuex";
+// import { INCREMENT } from "../mutation-types";
 
 export default {
   name: "Users",
@@ -53,8 +53,9 @@ export default {
       .get("https://jsonplaceholder.typicode.com/users")
       .then((response) => {
         this.setData(response.data);
+        // console.log(response.data.length);
       })
-      .catch((error) => (this.loading = false));
+      .catch(() => (this.loading = false));
   },
   methods: {
     setData(data) {
@@ -79,5 +80,9 @@ export default {
   border-bottom: 1px solid #e1e1e7;
   color: #646464;
   display: flex;
+}
+.body-card {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 </style>
